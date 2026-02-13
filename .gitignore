@@ -76,8 +76,7 @@ fastlane/readme.md
 .packages
 .pub/
 build/
-# If you're building an application, you may want to check-in your pubspec.lock
-pubspec.lock
+# pubspec.lock
 
 # Directory created by dartdoc
 # If you don't generate documentation locally you can remove this line.
@@ -251,8 +250,8 @@ DerivedData/
 # Google API key and other resources
 GoogleService-Info.plist
 google-services.json
-# Plugins (already resolved through pubspec.yaml)
 .flutter-plugins
+.flutter-plugins-dependencies
 # Backend (Node.js)
 backend/node_modules/
 backend/.env

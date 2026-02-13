@@ -50,6 +50,7 @@ All dependencies point inward toward the Domain layer.
 - go_router
 - dio
 - get_it
+- equatable
 - shared_preferences
 - fl_chart
 
@@ -119,11 +120,31 @@ flutter build web
 ```
 lib/
 ├── main.dart
-├── di/
+├── app.dart
+├── app/
+│   ├── di/
+│   ├── l10n/
+│   ├── routing/
+│   ├── theme/
+│   ├── helper/
+│   ├── extensions/
+│   └── utils/
 ├── domain/
+│   ├── entities/
+│   └── repositories/
 ├── data/
-├── presentation/
-└── l10n/
+│   ├── models/
+│   ├── mappers/
+│   ├── datasources/
+│   ├── repositories/
+│   └── storage/
+└── presentation/
+    ├── blocs/
+    ├── home/
+    ├── rates/
+    ├── rate_detail/
+    ├── settings/
+    └── shared/
 ```
 
 ## API
