@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "args": [
+        "-d",
+        "chrome"
+      ]
+    },
+    {
+      "name": "Flutter Mobile",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "Backend Proxy Server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "node server.js",
+      "cwd": "${workspaceFolder}/backend",
+      "env": {
+        "PORT": "3000"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Stack (Web + Backend)",
+      "configurations": [
+        "Backend Proxy Server",
+        "Flutter Web"
+      ],
+      "stopAll": true
+    }
+  ]
+}
