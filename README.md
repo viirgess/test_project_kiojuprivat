@@ -72,6 +72,8 @@ flutter gen-l10n
 
 ### Mobile (Android / iOS)
 
+Mobile apps connect directly to the NBU API (no backend needed):
+
 ```bash
 flutter run
 ```
@@ -85,7 +87,7 @@ flutter run -d ios
 
 ### Web
 
-**Important for Web**: Due to CORS restrictions, you need to run the backend proxy server.
+**Important for Web**: Due to CORS restrictions, you MUST run the backend proxy server.
 
 **Option 1 - Automated (recommended):**
 
@@ -106,6 +108,14 @@ Terminal 2 - Start Flutter web:
 ```bash
 flutter run -d chrome
 ```
+
+### VSCode Launch Configurations
+
+If using VSCode, pre-configured launch options are available:
+- **Flutter Mobile** - Run on mobile device
+- **Flutter Web** - Run on Chrome
+- **Backend Proxy Server** - Start Node.js proxy
+- **Full Stack (Web + Backend)** - Start both web and backend together
 
 ### Build Release
 
